@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC"-//w3c//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtm">
+<head>
+	<title>palindrome.html</title>
+</head>
+<body style="background-color: black; color: yellow;">
+	<script type="text/javascript">
+
+		var bordersize = prompt("Select a table border size \n"+
+								"0 (no border)\n"+
+								"1 (1 pixel border)\n"+
+								"4 (4 pixel border)\n"+
+								"8 (8 pixel border)\n");
+
+		switch(bordersize){
+			case "0":document.write("<table>");
+					 break;
+			case "1":document.write("<table border='1'>");
+					 break;
+			case "4":document.write("<table border='4'>");
+					 break;
+			case "8":document.write("<table border='8'>");
+					 break;
+			default:document.write("Error - Invalid choice: ",bordersize,"<br>");
+					 break;
+		}
+
+		document.write("<caption>TIME TABLE</caption>");
+		document.write("<tr>",
+					   "<th/>",
+					   "<th>LAB</th>",
+					   "<th>CLASS</th>",
+					   "</tr>",
+					   "<tr>",
+					   "<th>SUB1</th>",
+					   "<th>Maths</th>",
+					   "<th>Science</th>",
+					   "</tr>",
+					   "<tr>",
+					   "<th>SUB2</th>",
+					   "<th>Science</th>",
+					   "<th>Social</th>",
+					   "</tr>",
+					   "<tr>",
+					   "<th>SUB3</th>",
+					   "<th>Lab3</th>",
+					   "<th>Maths</th>",
+					   "</tr>",
+					   "<tr>",
+					   "<th>SUB4</th>",
+					   "<th>Lab4</th>",
+					   "<th>English</th>",
+					   "</tr>",
+					   "</table>");
+
+	</script>
+</body>
